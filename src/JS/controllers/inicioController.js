@@ -95,7 +95,8 @@ window.addEventListener("scroll", () => {
 
     // Reducir tamaño del navbar y logo
     const scale = 1 - (progress * 0.25);
-    logo.style.transform = `scale(${progress})`;
+
+    logo.style.transform = `scale(${scale})`;
     navIcons.forEach(icon => {
         icon.style.transform = `scale(${scale})`;
     });
