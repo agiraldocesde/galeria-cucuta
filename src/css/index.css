@@ -8,3 +8,32 @@
   --font-cormorant: "Cormorant Garamond", serif;
   --font-montserrat: "Montserrat", sans-serif;
 }
+@layer utilities {
+
+    /* 🎨 Fondos */
+    .bg-principal { background-color: #FAFAF8; }
+    .bg-alt { background-color: #F2F0EC; }
+    .bg-cards { background-color: #D6E8E2; }
+  
+    /* 📝 Texto */
+    .text-title { color: #2E3D35; }
+    .text-title-alt { color: #B89A6A; }
+    .text-paragraph { color: #635C55; }
+    .text-form { color: #C4BAB2; }
+    .text-banner { color: #A8C4B8; }
+    .text_cta_alt {color: #D4B896;}
+    .text_numeral_alt { color: #5C7A6B;}
+  
+    /* 🔘 Botones */
+    .bg-btn { background-color: #5C7A6B; }
+    .text-btn { color: #FFFFFF; }
+
+    /* border */
+    .border-subrayado{
+        border-color: #5C7A6B;
+        opacity: 0.5;
+    }
+    .border-cards{
+        border-color: rgba(45, 41, 38, 0.10);
+    }
+  }

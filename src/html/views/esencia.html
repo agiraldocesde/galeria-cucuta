@@ -8,9 +8,9 @@
     <title>Nuestra esencia</title>
 </head>
 
-<body>
+<body class="bg-principal">
     <nav id="navbar" class=" w-full z-50">
-        <div id="navContainer" class=" px-48 py-1 transition-all duration-500 bg-[rgba(58,74,63,0.9)]">
+        <div id="navContainer" class=" md:px-48 py-1 transition-all duration-500 bg-[rgba(92,122,107,0.8)]">
             <div id="navContents" class="flex flex-row md:flex-row justify-between items-center">
 
                 <div class="relative mt-1 flex justify-between gap-4">
@@ -19,7 +19,7 @@
                             fill="currentColor" class="h-7 w-7 fill-gray-200 hover:fill-black">
                             <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                         </svg>
-                        <p id="menuP">Menú</p>
+                        <p id="menuP" class="hidden md:block">Menú</p>
                     </button>
                     <ul id="menu" class="absolute top-full left-0 mt-4
                         flex flex-col md:flex-row items-start gap-4
@@ -27,10 +27,10 @@
                         text-xs uppercase tracking-widest text-white
                         opacity-0 scale-95 pointer-events-none
                         transition-all duration-300 ">
-                        <li><a href="./home.html" class="text-white hover:text-black transition">Inicio</a></li>
-                        <li><a href="./esencia.html" class="text-white hover:text-black transition">Nuestra Esencia</a>
-                        </li>
+                        <li><a href="./home.html" class="text-white hover:text-black transition">Inicio</a></li>                        
                         <li><a href="./colecciones.html" class="text-white hover:text-black transition">Colecciones</a>
+                        </li>
+                        <li><a href="./esencia.html" class="text-white hover:text-black transition">Nuestra Esencia</a>
                         </li>
                         <li><a href="./contacto.html" class="text-white hover:text-black transition">Contacto</a></li>
                     </ul>
@@ -119,12 +119,12 @@
     </nav>
     <main id="mainContent" class="mt-2 md:mt-4">
         <section class="px-5 max-w-auto mx-auto flex flex-col text-center justify-center max-w-6xl ">
-            <h1 class="text-slate-900 font-bold text-4xl md:text-5xl font-cormorant tracking-wide">Nuestra Esencia</h1>
-            <h2 class="text-slate-600 mt-4 text-lg md:text-xl font-cormorant tracking-wide">
+            <h1 class="text-slate-900 font-bold text-3xl md:text-4xl font-cormorant tracking-wide text-title">Nuestra Esencia</h1>
+            <h2 class="text-slate-600 mt-4 text-lg md:text-xl font-cormorant tracking-wide title-color text_numeral_alt">
                 Donde el buen gusto encuentra su hogar.
             </h2>
-            <hr class="w-24 border-slate-300 my-4 mx-auto">
-            <p class="text-slate-600 text-sm md:text-lg font-montserrat leading-relaxed tracking-tighter">
+            <hr class="w-24 border-slate-300 my-4 mx-auto border-subrayado">
+            <p class="text-slate-600 text-sm md:text-lg font-montserrat leading-relaxed tracking-tighter text-paragraph">
                 Creemos que un hogar bien concebido es la expresión más íntima del carácter de quien lo habita. Cada
                 línea, cada textura, cada proporción habla en silencio de quien elige vivirlo. Por eso, cada mueble que
                 ofrecemos lleva consigo una intención profunda: elevar lo cotidiano a la categoría del arte. No
@@ -134,27 +134,27 @@
         </section>
         <section class="w-full flex flex-col px-5">
             <div class="text-center mb-3 md:mb-6">
-                <h2 class="text-slate-600 mt-4 text-lg md:text-xl font-cormorant tracking-wide">
+                <h2 class="text-slate-600 mt-4 text-lg md:text-xl font-cormorant tracking-wide text_numeral_alt">
                     Lo que nos define
                 </h2>
-                <hr class="w-16 border-slate-300 my-4 mx-auto">
+                <hr class="w-16 border-slate-300 my-4 mx-auto border-subrayado">
             </div>
             <!-- Cards de descripción -->
             <div class="flex flex-col items-center w-full gap-6 mb-6">
                 <div class="group esencia-item flex flex-col md:flex-row gap-4 md:h-[500px]">
                     <div class="relative aspect-[4/3]">
-                        <img src="../images/card_creatividad.jpg" class="w-full h-full object-cover rounded-xl" alt="">
+                        <img src="../images/card_creatividad_2.jpg" class="w-full h-full object-cover rounded-xl" alt="">
                     </div>
                     <div class="max-w-md flex flex-col items-start justify-center px-5">
                         <div class="mb-1 md:mb-2">
-                            <h4 class="text-slate-600 mt-4 text-xs md:text-md font-montserrat tracking-wider">
+                            <h4 class="text-slate-600 mt-4 text-xs md:text-md font-montserrat tracking-wider text_numeral_alt">
                                 01 — Creatividad
                             </h4>
-                            <hr class="w-24 border-slate-300 my-2 mr-auto">
+                            <hr class="w-24 border-slate-300 my-2 mr-auto border-subrayado">
                         </div>
-                        <h2 class="text-slate-900 font-semibold text-2xl md:text-3xl font-cormorant tracking-wide">
+                        <h2 class="text-slate-900 font-semibold text-2xl md:text-3xl font-cormorant tracking-wide text-title">
                             Cada espacio, una visión única.</h2>
-                        <p class="text-slate-600 text-sm md:text-lg font-montserrat tracking-normal">
+                        <p class="text-slate-600 text-sm md:text-lg font-montserrat tracking-normal text-paragraph">
                             Traducimos tu estilo de vida en composiciones únicas donde la estética y el propósito
                             conviven en perfecta armonía. Cada ambiente nace de una idea — y culmina en un hogar
                             irrepetible.
@@ -168,15 +168,15 @@
                     </div>
                     <div class="max-w-md flex flex-col items-start md:items-end justify-center px-5">
                         <div class="mb-1 md:mb-2">
-                            <h4 class="text-slate-600 mt-4 text-xs md:text-md font-montserrat tracking-wider">
+                            <h4 class="text-slate-600 mt-4 text-xs md:text-md font-montserrat tracking-wider text_numeral_alt">
                                 02 — Innovación
                             </h4>
-                            <hr class="w-24 border-slate-300 my-2 mr-auto">
+                            <hr class="w-24 border-slate-300 my-2 mr-auto border-subrayado">
                         </div>
-                        <h2 class="text-slate-900 font-semibold text-2xl md:text-3xl font-cormorant tracking-wide">
+                        <h2 class="text-slate-900 font-semibold text-2xl md:text-3xl font-cormorant tracking-wide text-title">
                             Diseño que define el mañana.
                         </h2>
-                        <p class="text-slate-600 text-sm md:text-lg md:text-end font-montserrat tracking-normal">
+                        <p class="text-slate-600 text-sm md:text-lg md:text-end font-montserrat tracking-normal text-paragraph">
                             Evolucionamos con el diseño contemporáneo sin perder de vista lo atemporal. Incorporamos materiales, formas y tendencias que transforman los interiores del presente.
                         </p>
                     </div>
@@ -188,15 +188,15 @@
                     </div>
                     <div class="max-w-md flex flex-col items-start justify-center px-5">
                         <div class="mb-1 md:mb-2">
-                            <h4 class="text-slate-600 mt-4 text-xs md:text-md font-montserrat tracking-wider">
+                            <h4 class="text-slate-600 mt-4 text-xs md:text-md font-montserrat tracking-wider text_numeral_alt">
                                 03 — Calidad
                             </h4>
-                            <hr class="w-24 border-slate-300 my-2 mr-auto">
+                            <hr class="w-24 border-slate-300 my-2 mr-auto border-subrayado">
                         </div>
-                        <h2 class="text-slate-900 font-semibold text-2xl md:text-3xl font-cormorant tracking-wide">
+                        <h2 class="text-slate-900 font-semibold text-2xl md:text-3xl font-cormorant tracking-wide text-title">
                             Elegancia que no caduca.
                         </h2>
-                        <p class="text-slate-600 text-sm md:text-lg font-montserrat tracking-normal">
+                        <p class="text-slate-600 text-sm md:text-lg font-montserrat tracking-normal text-paragraph">
                             Seleccionamos cada detalle con rigor. Nuestras piezas están concebidas para perdurar — porque la verdadera elegancia es una inversión en el tiempo, no un capricho del momento.
                         </p>
                     </div>
@@ -204,11 +204,11 @@
             </div>
         </section>
         <section class="px-5 max-w-auto mx-auto flex flex-col text-center justify-center max-w-6xl mb-4 ">
-            <h2 class="text-slate-900 text-2xl md:text-3xl font-cormorant font-semibold tracking-normal">
+            <h2 class="text-slate-900 text-2xl md:text-3xl font-cormorant font-semibold tracking-normal text-title">
                 Más que mobiliario, ofrecemos el arte de vivir bien.
             </h2>
-            <hr class="w-42 border-slate-300 my-3 mx-auto">
-            <p class="text-slate-600 text-sm md:text-lg font-montserrat leading-relaxed tracking-normal">
+            <hr class="w-42 border-slate-300 my-3 mx-auto border-subrayado">
+            <p class="text-slate-600 text-sm md:text-lg font-montserrat leading-relaxed tracking-normal text-paragraph">
                 Hay espacios que simplemente se habitan, y hay espacios que se sienten desde el primer instante en que
                 se cruza su umbral. En Arte & Estilo trabajamos para que cada hogar pertenezca a esa segunda categoría —
                 donde cada mueble tiene su razón de ser, donde cada detalle fue elegido con intención y donde la
@@ -221,29 +221,29 @@
                 class="absolute inset-0 bg-[linear-gradient(to_right,rgba(12,10,8,0.9)_0%,rgba(12,10,8,0.7)_55%,rgba(12,10,8,0.3)_100%)]">
             </div>
             <div class="absolute inset-0 flex items-center">
-                <div class="w-full md:w-1/2 px-6 md:px-16 text-left text-white">
-                    <p class="font-semibold font-montserrat text-xs md:text-sm opacity-80 tracking-wider">
+                <div class="w-full md:w-1/2 px-6 md:px-16 text-left ">
+                    <p class="font-semibold font-montserrat text-xs md:text-sm opacity-80 tracking-wider text-banner">
                         Arte & Estilo
                     </p>
-                    <hr class="w-16 border-slate-300 my-2 md:my-4 mr-auto">
-                    <h2 class="text-2xl w-3/4 md:text-4xl font-semibold mt-3 font-cormorant leading-tight tracking-wide">
+                    <hr class="w-16 border-slate-300 my-2 md:my-4 mr-auto border-subrayado">
+                    <h2 class="text-2xl w-3/4 md:text-4xl font-semibold mt-3 font-cormorant leading-tight tracking-wide text-title-alt">
                         Tu hogar merece una historia que valga la pena contar.
                     </h2>
-                    <p class="mt-4 hidden md:block text-base text-white/80 md:max-w-7xl md:leading-loose font-montserrat tracking-normal">
+                    <p class="mt-4 hidden md:block text-base text-form md:max-w-7xl md:leading-loose font-montserrat tracking-normal">
                         Descubre piezas únicas diseñadas para quienes eligen vivir con intención. Porque quienes buscan lo extraordinario merecen encontrarlo sin tener que buscarlo muy lejos.
                     </p>
-                    <p class="my-3 block md:hidden text-sm text-white/80 max-w-sm font-montserrat leading-relaxed">
+                    <p class="my-3 block md:hidden text-sm text-form max-w-sm font-montserrat leading-relaxed">
                         Más que mobiliario, ofrecemos el arte de vivir bien...
                     </p>
                     <div class="mt-4 flex items-center gap-3 md:gap-4">
                         <a href="../views/colecciones.html"
-                            class="bg-olive-600 text-white text-xs md:text-sm font-medium uppercase px-3 py-1.5 md:px-5 md:py-2 rounded transition">
-                            <span class="block md:hidden font-montserrat">Explora la colección</span>
-                            <span class="hidden md:block font-montserrat">Explora la colección</span>
+                            class="bg-olive-600 text-white text-xs md:text-sm font-medium uppercase px-3 py-1.5 md:px-5 md:py-2 rounded transition bg-btn ">
+                            <span class="block md:hidden font-montserrat text-btn">Explora la colección</span>
+                            <span class="hidden md:block font-montserrat text-btn">Explora la colección</span>
                         </a>
                         <a href="#" class="text-xs md:text-sm text-white/90 hover:text-white transition">
-                            <span class="block md:hidden font-montserrat">Habla con un Asesor</span>
-                            <span class="hidden md:block font-montserrat">Hablar con un asesor</span>
+                            <span class="block md:hidden font-montserrat text_alt">Habla con un Asesor</span>
+                            <span class="hidden md:block font-montserrat text_alt">Hablar con un asesor</span>
                         </a>
                     </div>
                 </div>

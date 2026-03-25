@@ -8,7 +8,7 @@
     <title>Home</title>
 </head>
 
-<body class="m-0 p-0 overflow-x-hidden">
+<body class="m-0 p-0 overflow-x-hidden bg-principal">
     <nav id="navbar" class="fixed top-0 left-0 w-full z-50">
         <div id="navContainer" class="mx-auto max-w-6xl px-5 py-6 transition-all duration-500">
             <div id="navContents" class="flex flex-row md:flex-row justify-between items-center">
@@ -19,7 +19,7 @@
                             fill="currentColor" class="h-7 w-7 fill-gray-200 hover:fill-black">
                             <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                         </svg>
-                        <p id="menuP">Menú</p>
+                        <p id="menuP" class="hidden md:block">Menú</p>
                     </button>
                     <ul id="menu" class="absolute top-full left-0 mt-4
                         flex flex-col md:flex-row items-start gap-4
@@ -27,10 +27,10 @@
                         text-xs uppercase tracking-widest text-white
                         opacity-0 scale-95 pointer-events-none
                         transition-all duration-300 ">
-                        <li><a href="./home.html" class="text-white hover:text-black transition">Inicio</a></li>
-                        <li><a href="./esencia.html" class="text-white hover:text-black transition">Nuestra Esencia</a>
-                        </li>
+                        <li><a href="./home.html" class="text-white hover:text-black transition">Inicio</a></li>                        
                         <li><a href="./colecciones.html" class="text-white hover:text-black transition">Colecciones</a>
+                        </li>
+                        <li><a href="./esencia.html" class="text-white hover:text-black transition">Nuestra Esencia</a>
                         </li>
                         <li><a href="./contacto.html" class="text-white hover:text-black transition">Contacto</a></li>
                     </ul>
@@ -126,7 +126,7 @@
             <div
                 class="relative z-10 flex flex-col h-full items-center justify-center text-stone-100 md:items-start md:justify-end">
                 <p
-                    class=" text-4xl md:text-6xl mb-0 ml-0 md:ml-30 md:mb-40 px-6 md:px-0 opacity-0 translate-y-1 transition-all ease-in-out duration-2000 font-cormorant tracking-normal text-center md:text-left font-bold">
+                    class=" text-4xl md:text-6xl mb-0 ml-0 md:ml-30 md:mb-40 px-6 md:px-0 opacity-0 translate-y-1 transition-all ease-in-out duration-2000 font-cormorant tracking-normal text-center md:text-left font-bold ">
                     Decora como tú eres. Sin moldes, sin reglas.
                     <br>
                     <span class="font-montserrat text-sm md:text-xl font-normal">
@@ -138,13 +138,13 @@
         </section>
         <section class="bg-stone-200 flex flex-col items-center py-8">
             <div class="flex flex-col items-center text-center justify-center px-5 mb-5">
-                <h2 class="text-slate-900 font-semibold text-xl md:text-3xl font-cormorant tracking-wide">
+                <h2 class="text-slate-900 font-semibold text-xl md:text-3xl font-cormorant tracking-wide text-title">
                     Algo para cada rincón de tu casa.</h2>
-                <p class="text-slate-600 text-xs md:text-lg font-montserrat tracking-normal">
+                <p class="text-slate-600 text-xs md:text-lg font-montserrat tracking-normal text-paragraph">
                     Muebles, mesas, sillas y comedores — todo lo que necesitas para que cada espacio tenga su momento.
                 </p>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 grid-rows-3 md:grid-rows-2 gap-4 w-full max-w-7xl mx-auto px-5 h-[500px ] md:h-[670px]">
+            <div class="grid grid-cols-2 md:grid-cols-4 grid-rows-3 md:grid-rows-2 gap-4 w-full max-w-7xl mx-auto px-5 h-[500px] md:h-[670px]">
 
                 <!-- Muebles -->
                 <div class="col-span-2 md:col-span-2 relative overflow-hidden rounded-xl group">
@@ -196,10 +196,10 @@
 
             <!-- Título -->
             <div class="text-center mb-8 ">
-                <h2 class="text-slate-900 font-semibold text-2xl md:text-4xl font-cormorant tracking-wide">
+                <h2 class="text-slate-900 font-semibold text-2xl md:text-4xl font-cormorant tracking-wide text-title">
                     Lo que más se llevan — y con razón.
                 </h2>
-                <p class="text-slate-600 text-sm md:text-lg font-montserrat tracking-normal">
+                <p class="text-slate-600 text-sm md:text-lg font-montserrat tracking-normal text-paragraph">
                     Estos son los favoritos de nuestra gente. Si tanto gustan, algo saben.
                 </p>
             </div>
@@ -299,7 +299,7 @@
                 class="absolute w-full h-full object-cover object-center brightness-70" alt="">
             <div class="text-center py-10 relative z-10 flex flex-col items-center justify-center h-full gap-5">
                 <p
-                    class="text-xl md:text-4xl mx-3 md:mx-0 px-0 md:px-10 md:p-5 text-stone-900 backdrop-blur-xl md:backdrop-blur-2xl bg-black/10 rounded-xl font-bold font-cormorant tracking-wide">
+                    class="text-xl md:text-4xl mx-3 md:mx-0 px-0 md:px-10 md:p-5 text-stone-900 backdrop-blur-xl md:backdrop-blur-2xl bg-black/10 rounded-xl font-bold font-cormorant tracking-wide title-color">
                     A veces un solo mueble lo cambia todo.
                     <br>
                     <span class="font-montserrat text-xs md:text-xl font-normal">
@@ -312,10 +312,10 @@
 
             <!-- Título -->
             <div class="text-center mb-8 ">
-                <h2 class="text-2xl md:text-4xl font-bold text-slate-800 font-cormorant">
+                <h2 class="text-2xl md:text-4xl font-bold text-slate-800 font-cormorant text-title">
                     Buen precio, mejor pieza.
                 </h2>
-                <p class="text-sm md:text-lg mt-2 px-10 md:p-0 text-slate-600 font-montserrat">
+                <p class="text-sm md:text-lg mt-2 px-10 md:p-0 text-slate-600 font-montserrat text-paragraph">
                     Porque renovar tu espacio no debería ser un lujo. Estas ofertas no duran para siempre.
                 </p>
             </div>
