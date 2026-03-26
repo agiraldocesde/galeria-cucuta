@@ -45,7 +45,8 @@ Actualmente se tiene una **primera versión del frontend** desplegada, que inclu
 arte-y-estilo/
 │
 └── public/
-    └── src/
+        
+└── src/
         │
         ├── css/                        # Archivos de estilos
         │   ├── inicio.css
@@ -56,10 +57,10 @@ arte-y-estilo/
         ├── html/                       # Vistas y recursos visuales
         │   ├── images/                 # Imágenes de los productos
         │   └── views/                  # Páginas HTML
-        │       ├── index.html          # Inicio
+        │       ├── home.html           # Inicio
         │       ├── esencia.html        # Nuestra Esencia
         │       ├── colecciones.html    # Colecciones
-        │       └── contacto.html      # Contacto
+        │       └── contacto.html       # Contacto
         │
         └── JS/                         # Lógica del frontend
             ├── controllers/            # Controladores de cada sección
