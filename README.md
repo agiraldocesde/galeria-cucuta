@@ -35,7 +35,7 @@ Actualmente se tiene una **primera versión del frontend** desplegada, que inclu
 | JavaScript    | Interactividad y lógica del frontend          |
 | Tailwind CSS  | Diseño y estilos visuales                     |
 | Java          | Lógica del servidor (backend)                 |
-| MySQL         | Base de datos                                 |
+| SQL Server    | Base de datos                                 |
 
 ---
 
@@ -108,7 +108,7 @@ arte-y-estilo/
 ## 📅 Entregas
 
 - **Primera entrega:** Planteamiento del proyecto, tecnologías, estructura inicial y página de inicio ✅
-- **Segunda entrega:** _(por definir)_
+- **Segunda entrega:** Desarrollo de pantallas de secciones como Colecciones, nuestra esencia, contactanos, estructura de base de datos
 - **Entrega final:** _(por definir)_
 
 ---
