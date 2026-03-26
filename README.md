@@ -83,9 +83,9 @@ arte-y-estilo/
 |-------------------------------|----------------|
 | Estructura del proyecto       | ✅ Listo       |
 | Página principal — Inicio     | ✅ Listo       |
-| Sección Nuestra Esencia       | ⏳ Pendiente   |
-| Sección Colecciones           | ⏳ Pendiente   |
-| Sección Contacto              | ⏳ Pendiente   |
+| Sección Nuestra Esencia       | ✅ Listo       |
+| Sección Colecciones           | 🔄 En progreso |
+| Sección Contacto              | ✅ Listo       |
 | Diseño de la base de datos    | 🔄 En progreso |
 | Catálogo con detalle          | ⏳ Pendiente   |
 | Registro de ventas            | ⏳ Pendiente   |
