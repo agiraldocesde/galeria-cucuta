@@ -102,3 +102,16 @@ window.addEventListener("scroll", () => {
     });
     menuText.style.transform = `scale(${scale})`;
 });
+
+function toggleFAQ(button) {
+    const content = button.nextElementSibling;
+    const icon = button.querySelector("span:last-child");
+
+    content.classList.toggle("hidden");
+
+    if (content.classList.contains("hidden")) {
+        icon.textContent = "+";
+    } else {
+        icon.textContent = "−";
+    }
+}

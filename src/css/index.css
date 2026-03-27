@@ -14,6 +14,16 @@
     .bg-principal { background-color: #FAFAF8; }
     .bg-alt { background-color: #F2F0EC; }
     .bg-cards { background-color: #D6E8E2; }
+    .bg-info { background-color: rgba(196, 186, 178, .2); }
+    .bg-entregado{
+        background-color: rgba(168, 196, 184, .5);
+    }
+    .bg-encamino{
+        background-color: rgba(212, 184, 150, .5);
+    }
+    .bg-procesando{
+      background-color: rgba(221, 219, 249, .5);
+  }
   
     /* 📝 Texto */
     .text-title { color: #2E3D35; }
@@ -30,8 +40,7 @@
 
     /* border */
     .border-subrayado{
-        border-color: #5C7A6B;
-        opacity: 0.5;
+        border-color: rgba(92, 122, 107, .5);
     }
     .border-cards{
         border-color: rgba(45, 41, 38, 0.10);
