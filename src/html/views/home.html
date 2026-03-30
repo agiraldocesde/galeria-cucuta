@@ -10,10 +10,10 @@
 
 <body class="m-0 p-0 overflow-x-hidden bg-principal">
     <header>
-        <nav id="navbar" class=" w-full z-50">
-            <div id="navContainer" class=" md:px-48 py-1 transition-all duration-500 bg-[rgba(92,122,107,0.8)]">
+        <nav id="navbar" class="fixed w-full z-50">
+            <div id="navContainer" class=" md:px-48 py-1 transition-all duration-500">
                 <div id="navContents" class="flex flex-row md:flex-row justify-between items-center">
-    
+
                     <div class="relative mt-1 flex justify-between gap-4">
                         <button id="menuBtn" class=" text-white focus:outline-none flex items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
@@ -29,14 +29,17 @@
                             opacity-0 scale-95 pointer-events-none
                             transition-all duration-300 ">
                             <li><a href="./home.html" class="text-white hover:text-black transition">Inicio</a></li>
-                            <li><a href="./colecciones.html" class="text-white hover:text-black transition">Colecciones</a>
+                            <li><a href="./colecciones.html"
+                                    class="text-white hover:text-black transition">Colecciones</a>
                             </li>
-                            <li><a href="./esencia.html" class="text-white hover:text-black transition">Nuestra Esencia</a>
+                            <li><a href="./esencia.html" class="text-white hover:text-black transition">Nuestra
+                                    Esencia</a>
                             </li>
-                            <li><a href="./contacto.html" class="text-white hover:text-black transition">Contacto</a></li>
+                            <li><a href="./contacto.html" class="text-white hover:text-black transition">Contacto</a>
+                            </li>
                         </ul>
                         <!-- logo y carrito -->
-    
+
                     </div>
                     <div class="flex">
                         <div class="flex gap-2 text-lg tracking-tight">
@@ -47,7 +50,7 @@
                                             @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&amp;family=Montserrat:wght@200;300&amp;display=swap');
                                         </style>
                                     </defs>
-    
+
                                     <!-- SOFÁ OUTLINE -->
                                     <g transform="translate(24, 18)">
                                         <!-- Patas -->
@@ -56,41 +59,45 @@
                                         <line x1="39" y1="27" x2="41" y2="32" stroke="#E5E7EB" stroke-width="1.2"
                                             stroke-linecap="round" />
                                         <!-- Asiento -->
-                                        <rect x="8" y="20" width="32" height="7" rx="2" stroke="#E5E7EB" stroke-width="1.2"
-                                            fill="none" />
+                                        <rect x="8" y="20" width="32" height="7" rx="2" stroke="#E5E7EB"
+                                            stroke-width="1.2" fill="none" />
                                         <!-- Respaldo -->
                                         <rect x="10" y="10" width="28" height="11" rx="2" stroke="#E5E7EB"
                                             stroke-width="1.2" fill="none" />
                                         <!-- Brazo izquierdo -->
                                         <path d="M8 20 L4 20 Q2 20 2 18 L2 14 Q2 12 4 12 L10 12" stroke="#E5E7EB"
-                                            stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                                            stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
+                                            fill="none" />
                                         <!-- Brazo derecho -->
                                         <path d="M40 20 L44 20 Q46 20 46 18 L46 14 Q46 12 44 12 L38 12" stroke="#E5E7EB"
-                                            stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                                            stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
+                                            fill="none" />
                                         <!-- Línea cojín central -->
                                         <line x1="24" y1="10" x2="24" y2="21" stroke="#E5E7EB" stroke-width="0.7"
                                             stroke-dasharray="1.5 2" opacity="0.5" />
                                     </g>
-    
+
                                     <!-- TEXTO: Arte & Estilo -->
-                                    <text x="90" y="42" font-family="'Cormorant Garamond', Georgia, serif" font-size="32"
-                                        font-weight="300" letter-spacing="8" fill="#E5E7EB">Arte</text>
-    
-                                    <text x="183" y="40" font-family="'Cormorant Garamond', Georgia, serif" font-size="22"
-                                        font-style="italic" font-weight="300" fill="#E5E7EB" opacity="0.5">&amp;</text>
-    
-                                    <text x="202" y="42" font-family="'Cormorant Garamond', Georgia, serif" font-size="32"
-                                        font-weight="300" letter-spacing="8" fill="#E5E7EB">Estilo</text>
-    
+                                    <text x="90" y="42" font-family="'Cormorant Garamond', Georgia, serif"
+                                        font-size="32" font-weight="300" letter-spacing="8" fill="#E5E7EB">Arte</text>
+
+                                    <text x="183" y="40" font-family="'Cormorant Garamond', Georgia, serif"
+                                        font-size="22" font-style="italic" font-weight="300" fill="#E5E7EB"
+                                        opacity="0.5">&amp;</text>
+
+                                    <text x="202" y="42" font-family="'Cormorant Garamond', Georgia, serif"
+                                        font-size="32" font-weight="300" letter-spacing="8" fill="#E5E7EB">Estilo</text>
+
                                     <!-- HR -->
                                     <line x1="90" y1="54" x2="396" y2="54" stroke="#E5E7EB" stroke-width="0.8"
                                         opacity="0.4" />
-    
+
                                     <!-- TAGLINE -->
                                     <text x="90" y="68" font-family="'Montserrat', Arial, sans-serif" font-size="7.5"
-                                        font-weight="200" letter-spacing="4" fill="#E5E7EB" opacity="0.6">MUEBLERÍA &amp;
+                                        font-weight="200" letter-spacing="4" fill="#E5E7EB" opacity="0.6">MUEBLERÍA
+                                        &amp;
                                         ARTÍCULOS DE HOGAR</text>
-    
+
                                 </svg>
                             </a>
                         </div>
@@ -98,8 +105,8 @@
                     <div class="flex items-center gap-4">
                         <div>
                             <a href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                                    fill="#currentColor" class="h-7 w-7 fill-gray-200 hover:fill-black">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#currentColor" class="h-7 w-7 fill-gray-200 hover:fill-black">
                                     <path
                                         d="M223.5-103.5Q200-127 200-160t23.5-56.5Q247-240 280-240t56.5 23.5Q360-193 360-160t-23.5 56.5Q313-80 280-80t-56.5-23.5Zm400 0Q600-127 600-160t23.5-56.5Q647-240 680-240t56.5 23.5Q760-193 760-160t-23.5 56.5Q713-80 680-80t-56.5-23.5ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z" />
                                 </svg>
@@ -107,8 +114,8 @@
                         </div>
                         <div>
                             <a href="./myProfile.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                                    fill="currentColor" class="h-8 w-8 fill-gray-200 hover:fill-black">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="currentColor" class="h-8 w-8 fill-gray-200 hover:fill-black">
                                     <path
                                         d="M367-527q-47-47-47-113t47-113q47-47 113-47t113 47q47 47 47 113t-47 113q-47 47-113 47t-113-47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm296.5-343.5Q560-607 560-640t-23.5-56.5Q513-720 480-720t-56.5 23.5Q400-673 400-640t23.5 56.5Q447-560 480-560t56.5-23.5ZM480-640Zm0 400Z" />
                                 </svg>
@@ -121,22 +128,23 @@
     </header>
     <main>
         <section class="relative h-screen overflow-hidden">
-
-            <img src="../images/banner.jpg" class="absolute inset-0 w-full h-full object-cover brightness-50"
+            <img src="../images/banner.jpg"
+                class="absolute inset-0 w-full h-full object-cover"
                 alt="Banner">
-
-            <div
-                class="relative z-10 flex flex-col h-full items-center justify-center text-stone-100 md:items-start md:justify-end">
-                <p
-                    class=" text-4xl md:text-6xl mb-0 ml-0 md:ml-30 md:mb-40 px-6 md:px-0 opacity-0 translate-y-1 transition-all ease-in-out duration-2000 font-cormorant tracking-normal text-center md:text-left font-bold ">
-                    Decora como tú eres. Sin moldes, sin reglas.
-                    <br>
-                    <span class="font-montserrat text-sm md:text-xl font-normal">
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10 flex flex-col justify-center md:justify-end h-full px-6 md:px-20 pb-10 md:pb-20">
+                <p class="max-w-6xl text-white font-cormorant font-bold 
+                          text-3xl md:text-6xl leading-tight
+                          text-center md:text-left
+                          opacity-0 translate-y-4 transition-all duration-1000">        
+                    Decora como tú eres. Sin moldes, sin reglas.        
+                    <br>        
+                    <span class="block mt-2 font-montserrat font-normal 
+                                 text-sm md:text-xl text-white/80">
                         Piezas únicas para casas que tienen algo que contar.
-                    </span>
-
-                </p>
-            </div>
+                    </span>        
+                </p>        
+            </div>        
         </section>
         <section class="bg-stone-200 flex flex-col items-center py-8">
             <div class="flex flex-col items-center text-center justify-center px-5 mb-5">
@@ -146,7 +154,8 @@
                     Muebles, mesas, sillas y comedores — todo lo que necesitas para que cada espacio tenga su momento.
                 </p>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 grid-rows-3 md:grid-rows-2 gap-4 w-full max-w-7xl mx-auto px-5 h-[500px] md:h-[670px]">
+            <div
+                class="grid grid-cols-2 md:grid-cols-4 grid-rows-3 md:grid-rows-2 gap-4 w-full max-w-7xl mx-auto px-5 h-[500px] md:h-[670px]">
 
                 <!-- Muebles -->
                 <div class="col-span-2 md:col-span-2 relative overflow-hidden rounded-xl group">
@@ -160,7 +169,8 @@
                 </div>
 
                 <!-- Comedores -->
-                <div class="col-span-1 row-span-2 md:col-span-2 md:row-span-2 relative overflow-hidden rounded-xl group">
+                <div
+                    class="col-span-1 row-span-2 md:col-span-2 md:row-span-2 relative overflow-hidden rounded-xl group">
                     <img src="../images/comedores.jpg"
                         class="h-full w-full object-cover brightness-50 transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 flex items-center justify-center bg-black/10">
@@ -296,18 +306,19 @@
                     </div>
                 </div>
         </section>
-        <section class="h-[400px] md:h-[640px] overflow-hidden relative">
-            <img src="../images/banner-comedor.jpg"
-                class="absolute w-full h-full object-cover object-center brightness-70" alt="">
-            <div class="text-center py-10 relative z-10 flex flex-col items-center justify-center h-full gap-5">
-                <p
-                    class="text-xl md:text-4xl mx-3 md:mx-0 px-0 md:px-10 md:p-5 text-stone-900 backdrop-blur-xl md:backdrop-blur-2xl bg-black/10 rounded-xl font-bold font-cormorant tracking-wide title-color">
+        <section class="h-[400px] md:h-[740px] relative overflow-hidden">
+            <img src="../images/banner-comedor.jpg" class="absolute inset-0 w-full h-full object-cover object-center"
+                alt="">
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 gap-4">
+                <p class="text-white font-cormorant font-bold tracking-wide 
+                  text-xl md:text-4xl max-w-2xl leading-snug">
                     A veces un solo mueble lo cambia todo.
-                    <br>
-                    <span class="font-montserrat text-xs md:text-xl font-normal">
-                        No hace falta renovar todo. Solo elegir bien.
-                    </span>
                 </p>
+                <span class="text-white/80 font-montserrat 
+                     text-sm md:text-lg max-w-xl">
+                    No hace falta renovar todo. Solo elegir bien.
+                </span>
             </div>
         </section>
         <section class="py-6 bg-stone-100 overflow-hidden">
@@ -413,25 +424,27 @@
                 </div>
         </section>
     </main>
-    <footer class="h-[400px] md:h-[640px] overflow-hidden relative">
-        <img src="../images/living-room.jpg" class="absolute w-full h-full object-cover object-center brightness-70"
-                alt="">
-            <div class="text-center py-10 relative z-10 flex flex-col items-center justify-center h-full gap-5">
-                <p
-                    class=" text-xl md:text-4xl mx-3 md:mx-0 px-4 md:px-10 md:p-5 py-2 text-slate-700  backdrop-blur-xl md:backdrop-blur-2xl bg-black/10 rounded-xl font-bold font-cormorant tracking-wide">
-                    ¿Te está rondando una idea en la cabeza?
-                    <br>
-                    <span class="font-montserrat text-xs md:text-xl font-normal">
-                        Cuéntanos cómo la imaginas y te ayudamos a hacerla realidad.
-                    </span>
-                </p>
-                <button>
-                    <a href="#"
-                        class="mt-6 px-6 py-3 bg-slate-700 text-white rounded-xl text-sm md:text-base font-medium hover:bg-stone-800 transition">
-                        Escríbenos
-                    </a>
-                </button>
-            </div>
+    <footer class="h-[400px] md:h-[740px] relative overflow-hidden">
+        <img src="../images/living-room.jpg"
+            class="absolute inset-0 w-full h-full object-cover object-center"
+            alt="">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 gap-5">    
+            <p class="text-white font-cormorant font-bold tracking-wide 
+                      text-xl md:text-4xl max-w-2xl leading-snug">
+                ¿Te está rondando una idea en la cabeza?
+            </p>    
+            <span class="text-white/80 font-montserrat 
+                         text-sm md:text-lg max-w-xl">
+                Cuéntanos cómo la imaginas y te ayudamos a hacerla realidad.
+            </span>    
+            <a href="#"
+               class="mt-4 px-6 py-3 bg-white text-black rounded-xl 
+                      text-sm md:text-base font-medium 
+                      hover:bg-neutral-200 transition">
+                Escríbenos
+            </a>
+        </div>    
     </footer>
     <script src="../../JS/controllers/inicioController.js">
     </script>
