@@ -115,6 +115,7 @@ const productos = [
             "../images/catalogo/card-venta3.jpg",
             "../images/catalogo/card-venta4.jpg"
         ],
+        img_footer: "../images/bnFooter_infoCatalogo/banner-venta.jpg",
         descripcion: "Fabricado en bambú natural...",
         categoria: "Banco con almacenamiento",
         material: "Bambú natural + tapizado",
@@ -132,6 +133,7 @@ const productos = [
             "../images/catalogo/mueble-3.jpg",
             "../images/catalogo/mueble-4.jpg"
         ],
+        img_footer: "../images/bnFooter_infoCatalogo/muebles.jpg",
         descripcion: "Sofá de dos puestos con diseño moderno y líneas limpias, tapizado en tela color azul suave. Ofrece comodidad y estilo, ideal para salas contemporáneas. Incluye cojines amplios y apoyabrazos acolchados que brindan mayor confort.",
         categoria: "Descanso e intimidad",
         material: "Estructura en madera con tapizado en tela y patas en madera",
@@ -149,6 +151,7 @@ const productos = [
             "../images/catalogo/mesa-3.jpg",
             "../images/catalogo/mesa-4.jpg"
         ],
+        img_footer: "../images/bnFooter_infoCatalogo/banner-silla.jpg",
         descripcion: "Aparador de diseño minimalista con acabado en madera natural. Cuenta con un cajón central y dos compartimentos laterales con puertas, ideal para organizar objetos del hogar mientras aporta un toque cálido y elegante al espacio.",
         categoria: "Descanso e intimidad",
         material: "Madera maciza (posiblemente roble o similar) con acabado natural",
@@ -166,6 +169,7 @@ const productos = [
             "../images/catalogo/card-venta3.jpg",
             "../images/catalogo/card-venta4.jpg"
         ],
+        img_footer: "../images/bnFooter_infoCatalogo/banner-venta.jpg",
         descripcion: "Fabricado en bambú natural...",
         categoria: "Banco con almacenamiento",
         material: "Bambú natural + tapizado",
@@ -183,6 +187,7 @@ const productos = [
             "../images/catalogo/mueble-3.jpg",
             "../images/catalogo/mueble-4.jpg"
         ],
+        img_footer: "../images/bnFooter_infoCatalogo/muebles.jpg",
         descripcion: "Sofá de dos puestos con diseño moderno y líneas limpias, tapizado en tela color azul suave. Ofrece comodidad y estilo, ideal para salas contemporáneas. Incluye cojines amplios y apoyabrazos acolchados que brindan mayor confort.",
         categoria: "Descanso e intimidad",
         material: "Estructura en madera con tapizado en tela y patas en madera",
@@ -200,6 +205,7 @@ const productos = [
             "../images/catalogo/mesa-3.jpg",
             "../images/catalogo/mesa-4.jpg"
         ],
+        img_footer: "../images/bnFooter_infoCatalogo/banner-silla.jpg",
         descripcion: "Aparador de diseño minimalista con acabado en madera natural. Cuenta con un cajón central y dos compartimentos laterales con puertas, ideal para organizar objetos del hogar mientras aporta un toque cálido y elegante al espacio.",
         categoria: "Descanso e intimidad",
         material: "Madera maciza (posiblemente roble o similar) con acabado natural",
@@ -209,6 +215,7 @@ const productos = [
     }
 
 ];
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -242,5 +249,14 @@ document.addEventListener("DOMContentLoaded", () => {
         imagen.className = "w-full h-full object-cover rounded-xl";
         contenedor.appendChild(imagen);
     });
+    if (producto.img_footer) {
+        const imagenFooter = document.createElement("img");
+        imagenFooter.src = producto.img_footer; // Aquí va la ruta de la imagen
+        imagenFooter.className = "w-full h-full object-cover rounded-xl";
+    
+        // Selecciona el footer y lo agrega dentro, o reemplaza el contenido existente
+        const footer = document.getElementById("img_footer");
+        footer.appendChild(imagenFooter);
+    }
 
 });
