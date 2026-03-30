@@ -102,3 +102,94 @@ window.addEventListener("scroll", () => {
     });
     menuText.style.transform = `scale(${scale})`;
 });
+
+
+const productos = [
+    {
+        id: 1,
+        nombre: "Banco Bambú Natural",
+        precio: "$1,200,000",
+        imagenes: [
+            "/src/html/images/catalogo/card-venta1.jpg",
+            "/src/html/images/catalogo/card-venta2.jpg",
+            "/src/html/images/catalogo/card-venta3.jpg",
+            "/src/html/images/catalogo/card-venta4.jpg"
+        ],
+        descripcion: "Fabricado en bambú natural...",
+        categoria: "Banco con almacenamiento",
+        material: "Bambú natural + tapizado",
+        estilo: "Nórdico / Orgánico",
+        almacenamiento: "Estante inferior",
+        garantia: "12 meses"
+    },
+    {
+        id: 2,
+        nombre: "Sofá moderno de 2 puestos azul",
+        precio: "$1,500,000",
+        imagenes: [
+            "../images/catalogo/mueble-1.jpg",
+            "../images/catalogo/mueble-2.jpg",
+            "../images/catalogo/mueble-3.jpg",
+            "../images/catalogo/mueble-4.jpg"
+        ],
+        descripcion: "Sofá de dos puestos con diseño moderno y líneas limpias, tapizado en tela color azul suave. Ofrece comodidad y estilo, ideal para salas contemporáneas. Incluye cojines amplios y apoyabrazos acolchados que brindan mayor confort.",
+        categoria: "Descanso e intimidad",
+        material: "Estructura en madera con tapizado en tela y patas en madera",
+        estilo: "Moderno / Contemporáneo / Minimalista",
+        almacenamiento: "No incluye almacenamiento",
+        garantia: "12 meses"
+    },
+    {
+        id: 3,
+        nombre: "Aparador de madera estilo nórdico",
+        precio: "$1,800,000",
+        imagenes: [
+            "../images/catalogo/mesa-1.jpg",
+            "../images/catalogo/mesa-2.jpg",
+            "../images/catalogo/mesa-3.jpg",
+            "../images/catalogo/mesa-4.jpg"
+        ],
+        descripcion: "Aparador de diseño minimalista con acabado en madera natural. Cuenta con un cajón central y dos compartimentos laterales con puertas, ideal para organizar objetos del hogar mientras aporta un toque cálido y elegante al espacio.",
+        categoria: "Descanso e intimidad",
+        material: "Madera maciza (posiblemente roble o similar) con acabado natural",
+        estilo: "Nórdico / Escandinavo / Minimalista",
+        almacenamiento: "1 cajón central + 2 compartimentos con puertas laterales",
+        garantia: "12 meses"
+    }
+
+];
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+
+    const producto = productos.find(p => p.id == id);
+
+    if (!producto) {
+        document.body.innerHTML = "<h1>Producto no encontrado</h1>";
+        return;
+    }
+
+    document.getElementById("nombreProducto").textContent = producto.nombre;
+    document.getElementById("precioProducto").textContent = producto.precio;
+    document.getElementById("descripcion").textContent = producto.descripcion;
+    document.getElementById("categoria").textContent = producto.categoria;
+    document.getElementById("material").textContent = producto.material;
+    document.getElementById("estilo").textContent = producto.estilo;
+    document.getElementById("almacenamiento").textContent = producto.almacenamiento;
+    document.getElementById("garantia").textContent = producto.garantia;
+    
+    const contenedor = document.getElementById("imagenes");
+
+    contenedor.innerHTML = "";
+
+    producto.imagenes.forEach(img => {
+        const imagen = document.createElement("img");
+        imagen.src = img;
+        imagen.className = "w-full h-full object-cover rounded-xl";
+        contenedor.appendChild(imagen);
+    });
+
+});

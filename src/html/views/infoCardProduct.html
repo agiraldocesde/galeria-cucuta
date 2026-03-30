@@ -136,19 +136,14 @@
         </section>
         <section class="w-full px-5 mt-2">
             <div class="flex flex-col md:flex-row justify-center gap-4 mb-6 max-w-5xl mx-auto">
-                <div class="grid grid-cols-2 grid-rows-2 gap-4 w-full md:w-1/2">
-                    <img src="../images/card-venta1.jpg" class="w-full h-full object-cover rounded-xl" alt="">
-                    <img src="../images/card-venta2.jpg" class="w-full h-full object-cover rounded-xl" alt="">
-                    <img src="../images/card-venta3.jpg" class="w-full h-full object-cover rounded-xl" alt="">
-                    <img src="../images/card-venta4.jpg" class="w-full h-full object-cover rounded-xl" alt="">
-                </div>
+                <div id="imagenes" class="grid grid-cols-2 grid-rows-2 gap-4 w-full md:w-1/2"></div>
                 <div class="w-full md:w-1/2 flex flex-col justify-center px-5 md:h-[670px] gap-6">
                     <div class="flex items-center gap-10">
-                        <h1 class="font-semibold text-2xl pr-8 md:text-3xl font-cormorant tracking-wide text-title">
-                            Banco Bambú Natura
+                        <h1 id="nombreProducto" class="font-semibold text-2xl pr-8 md:text-3xl font-cormorant tracking-wide text-title">
+                            
                         </h1>
-                        <p class="text-md md:text-xl font-montserrat tracking-normal text-paragraph">
-                            $1,200,000
+                        <p id="precioProducto" class="text-md md:text-xl font-montserrat tracking-normal text-paragraph">
+                           
                         </p>
                     </div>
                     <div class="flex items-center gap-4 flex-wrap">
@@ -170,12 +165,7 @@
                 <h2 class="font-semibold text-2xl md:text-3xl font-cormorant tracking-wide text-title">
                     Por qué te va a <em>encantar.</em>
                 </h2>
-                <p class="text-sm md:text-lg font-montserrat tracking-normal text-paragraph">
-                    El Banco Bambú Natura es mucho más que un lugar donde sentarse. Fabricado en bambú natural de
-                    primera calidad, su estructura ligera y resistente se adapta a cualquier rincón del hogar con una
-                    presencia cálida y discreta. Su cojín tapizado en tela gris ofrece el confort justo, mientras que el
-                    estante inferior mantiene el orden sin sacrificar el estilo. Perfecto para la entrada, el dormitorio
-                    o cualquier espacio que merezca un toque de calidez natural.
+                <p id="descripcion" class="text-sm md:text-lg font-montserrat tracking-normal text-paragraph">
                 </p>
             </div>
             <div class="w-full md:w-1/2 flex flex-col justify-center gap-4 mx-auto">
@@ -188,8 +178,7 @@
                         my-0 md:my-auto">
                             Categoría
                         </h3>
-                        <p class="text-sm md:text-lg font-bold font-montserrat text-title-alt mb-1 md:mb-0">
-                            Banco con almacenamiento
+                        <p id="categoria" class="text-sm md:text-lg font-bold font-montserrat text-title-alt mb-1 md:mb-0">
                         </p>
                     </div>
                     <hr class="border-subrayado">
@@ -197,8 +186,7 @@
                         <h3 class="text-xl font-semibold text_numeral_alt md:text-2xl font-cormorant mb-1 md:my-auto">
                             Material
                         </h3>
-                        <p class="text-sm md:text-lg font-montserrat text-paragraph mb-2 md:mb-0">
-                            Bambú natural + tapizado en tela
+                        <p id="material" class="text-sm md:text-lg font-montserrat text-paragraph mb-2 md:mb-0">
                         </p>
                     </div>
                     <hr class="border-subrayado">
@@ -206,8 +194,7 @@
                         <h3 class="text-xl font-semibold text_numeral_alt md:text-2xl font-cormorant mb-1 md:my-auto">
                             Estilo
                         </h3>
-                        <p class="text-sm md:text-lg font-montserrat text-paragraph mb-2 md:mb-0">
-                            Nórdico / Orgánico
+                        <p id="estilo" class="text-sm md:text-lg font-montserrat text-paragraph mb-2 md:mb-0">
                         </p>
                     </div>
                     <hr class="border-subrayado">
@@ -215,8 +202,7 @@
                         <h3 class="text-xl font-semibold text_numeral_alt md:text-2xl font-cormorant mb-1 md:my-auto">
                             Almacenamiento
                         </h3>
-                        <p class="text-sm md:text-lg font-montserrat text-paragraph mb-2 md:mb-0">
-                            Estante inferior incluido
+                        <p id="almacenamiento" class="text-sm md:text-lg font-montserrat text-paragraph mb-2 md:mb-0">
                         </p>
                     </div>
                     <hr class="border-subrayado">
@@ -233,8 +219,7 @@
                         <h3 class="text-xl font-semibold text_numeral_alt md:text-2xl font-cormorant mb-1 md:my-auto">
                             Garantía
                         </h3>
-                        <p class="text-sm md:text-lg font-montserrat text-paragraph mb-2 md:mb-0">
-                            12 meses
+                        <p id="garantia" class="text-sm md:text-lg font-montserrat text-paragraph mb-2 md:mb-0">ßß
                         </p>
                     </div>
                 </div>
