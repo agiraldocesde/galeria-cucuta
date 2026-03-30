@@ -110,10 +110,10 @@ const productos = [
         nombre: "Banco Bambú Natural",
         precio: "$1,200,000",
         imagenes: [
-            "/src/html/images/catalogo/card-venta1.jpg",
-            "/src/html/images/catalogo/card-venta2.jpg",
-            "/src/html/images/catalogo/card-venta3.jpg",
-            "/src/html/images/catalogo/card-venta4.jpg"
+            "../images/catalogo/card-venta1.jpg",
+            "../images/catalogo/card-venta2.jpg",
+            "../images/catalogo/card-venta3.jpg",
+            "../images/catalogo/card-venta4.jpg"
         ],
         descripcion: "Fabricado en bambú natural...",
         categoria: "Banco con almacenamiento",
@@ -141,6 +141,57 @@ const productos = [
     },
     {
         id: 3,
+        nombre: "Aparador de madera estilo nórdico",
+        precio: "$1,800,000",
+        imagenes: [
+            "../images/catalogo/mesa-1.jpg",
+            "../images/catalogo/mesa-2.jpg",
+            "../images/catalogo/mesa-3.jpg",
+            "../images/catalogo/mesa-4.jpg"
+        ],
+        descripcion: "Aparador de diseño minimalista con acabado en madera natural. Cuenta con un cajón central y dos compartimentos laterales con puertas, ideal para organizar objetos del hogar mientras aporta un toque cálido y elegante al espacio.",
+        categoria: "Descanso e intimidad",
+        material: "Madera maciza (posiblemente roble o similar) con acabado natural",
+        estilo: "Nórdico / Escandinavo / Minimalista",
+        almacenamiento: "1 cajón central + 2 compartimentos con puertas laterales",
+        garantia: "12 meses"
+    },
+    {
+        id: 4,
+        nombre: "Banco Bambú Natural",
+        precio: "$1,200,000",
+        imagenes: [
+            "../images/catalogo/card-venta1.jpg",
+            "../images/catalogo/card-venta2.jpg",
+            "../images/catalogo/card-venta3.jpg",
+            "../images/catalogo/card-venta4.jpg"
+        ],
+        descripcion: "Fabricado en bambú natural...",
+        categoria: "Banco con almacenamiento",
+        material: "Bambú natural + tapizado",
+        estilo: "Nórdico / Orgánico",
+        almacenamiento: "Estante inferior",
+        garantia: "12 meses"
+    },
+    {
+        id: 5,
+        nombre: "Sofá moderno de 2 puestos azul",
+        precio: "$1,500,000",
+        imagenes: [
+            "../images/catalogo/mueble-1.jpg",
+            "../images/catalogo/mueble-2.jpg",
+            "../images/catalogo/mueble-3.jpg",
+            "../images/catalogo/mueble-4.jpg"
+        ],
+        descripcion: "Sofá de dos puestos con diseño moderno y líneas limpias, tapizado en tela color azul suave. Ofrece comodidad y estilo, ideal para salas contemporáneas. Incluye cojines amplios y apoyabrazos acolchados que brindan mayor confort.",
+        categoria: "Descanso e intimidad",
+        material: "Estructura en madera con tapizado en tela y patas en madera",
+        estilo: "Moderno / Contemporáneo / Minimalista",
+        almacenamiento: "No incluye almacenamiento",
+        garantia: "12 meses"
+    },
+    {
+        id: 6,
         nombre: "Aparador de madera estilo nórdico",
         precio: "$1,800,000",
         imagenes: [

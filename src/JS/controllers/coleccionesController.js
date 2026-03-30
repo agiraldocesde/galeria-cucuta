@@ -107,7 +107,7 @@ const cardProducts = [
     {
         id: 1,
         cardImagenes: [
-            "/src/html/images/catalogo/card-venta3.jpg"
+            "../images/catalogo/card-venta3.jpg"
         ],
         title: "Banco Bambú Natural",
         paragraph: "Mueble de madera con almacenamiento y diseño nórdico elegante."
@@ -123,11 +123,35 @@ const cardProducts = [
     {
         id: 3,
         cardImagenes: [
-            "/src/html/images/catalogo/mesa-1.jpg"
+            "../images/catalogo/mesa-1.jpg"
         ],
         title: "Aparador de madera estilo nórdico",
         paragraph: "Aparador minimalista de madera con cajón y puertas laterales."
-    } 
+    },
+    {
+        id: 4,
+        cardImagenes: [
+            "../images/catalogo/card-venta3.jpg"
+        ],
+        title: "Banco Bambú Natural",
+        paragraph: "Mueble de madera con almacenamiento y diseño nórdico elegante."
+    },
+    {
+        id: 5,
+        cardImagenes: [
+            "../images/catalogo/mueble-1.jpg"
+        ],
+        title: "Sofá moderno de 2 puestos azul",
+        paragraph: "Sofá de 2 puestos azul, cómodo y de estilo moderno."
+    },
+    {
+        id: 6,
+        cardImagenes: [
+            "../images/catalogo/mesa-1.jpg"
+        ],
+        title: "Aparador de madera estilo nórdico",
+        paragraph: "Aparador minimalista de madera con cajón y puertas laterales."
+    }
     
 ];
 
