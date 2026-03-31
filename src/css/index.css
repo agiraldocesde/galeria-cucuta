@@ -48,4 +48,10 @@
     .border-colection{
         border-color: rgba(92, 122, 107);
     }
+
+    /* lineas horizontales */
+    .linea-primaria{
+        background-color: rgba(92, 122, 107, 0.2);
+    }
+
   }
