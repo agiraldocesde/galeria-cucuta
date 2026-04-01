@@ -163,6 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
+    
     cardProducts.forEach(product => {
         const link = document.createElement("a");
         link.href = `infoCardProduct.html?id=${product.id}`;

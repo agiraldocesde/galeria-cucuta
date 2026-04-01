@@ -1,12 +1,16 @@
 window.addEventListener("load", () => {
     const bannerText = document.querySelector("section p");
 
-    bannerText.classList.remove("opacity-0", "translate-y-10");
-    bannerText.classList.add("opacity-100", "translate-y-0");
+    if (bannerText) {
+        bannerText.classList.remove("opacity-0", "translate-y-10");
+        bannerText.classList.add("opacity-100", "translate-y-0");
+    }
+
 });
 const menuBtn = document.getElementById("menuBtn");
 const menu = document.getElementById("menu");
 const menuP = document.getElementById("menuP");
+const menuText = document.getElementById("menuP");
 const links = menu.querySelectorAll("a");
 
 menuBtn.addEventListener("click", () => {
@@ -81,8 +85,8 @@ window.addEventListener("scroll", () => {
     // Cambiar color del texto
     if (progress > 0.99) {
         navIcons.forEach(icon => {
-            icon.classList.remove("fill-gray-200,");
-            icon.classList.add("fill-gray-100 ");
+            icon.classList.remove("fill-gray-200");
+            icon.classList.add("fill-gray-100");
             icon.classList.add("hover:fill-gray-100");
         });
     } else {
@@ -91,6 +95,7 @@ window.addEventListener("scroll", () => {
             icon.classList.add("fill-gray-200");
         });
     }
+
 
 
     // Reducir tamaño del navbar y logo
@@ -108,7 +113,8 @@ const productos = [
     {
         id: 1,
         nombre: "Banco Bambú Natural",
-        precio: "$1,200,000",
+        precio: "Ahora: $1,200,000",
+        precioAnterior: "Antes: $1,500,000",
         imagenes: [
             "../images/catalogo/card-venta1.jpg",
             "../images/catalogo/card-venta2.jpg",
@@ -126,7 +132,8 @@ const productos = [
     {
         id: 2,
         nombre: "Sofá moderno de 2 puestos azul",
-        precio: "$1,500,000",
+        precio: "Ahora: $1,500,000",
+        precioAnterior: "Antes: $2,000,000",
         imagenes: [
             "../images/catalogo/mueble-1.jpg",
             "../images/catalogo/mueble-2.jpg",
@@ -144,7 +151,8 @@ const productos = [
     {
         id: 3,
         nombre: "Aparador de madera estilo nórdico",
-        precio: "$1,800,000",
+        precio: "Ahora: $1,800,000",
+        precioAnterior: "Antes: $2,400,000",
         imagenes: [
             "../images/catalogo/mesa-1.jpg",
             "../images/catalogo/mesa-2.jpg",
@@ -162,7 +170,8 @@ const productos = [
     {
         id: 4,
         nombre: "Banco Bambú Natural",
-        precio: "$1,200,000",
+        precio: "Ahora: $1,200,000",
+        precioAnterior: "Antes: $1,500,000",
         imagenes: [
             "../images/catalogo/card-venta1.jpg",
             "../images/catalogo/card-venta2.jpg",
@@ -180,7 +189,8 @@ const productos = [
     {
         id: 5,
         nombre: "Sofá moderno de 2 puestos azul",
-        precio: "$1,500,000",
+        precio: "Ahora $1,500,000",
+        precioAnterior: "Antes: $2,000,000",
         imagenes: [
             "../images/catalogo/mueble-1.jpg",
             "../images/catalogo/mueble-2.jpg",
@@ -198,7 +208,8 @@ const productos = [
     {
         id: 6,
         nombre: "Aparador de madera estilo nórdico",
-        precio: "$1,800,000",
+        precio: "Ahora: $1,800,000",
+        precioAnterior: "Antes: $2,400,000",
         imagenes: [
             "../images/catalogo/mesa-1.jpg",
             "../images/catalogo/mesa-2.jpg",
@@ -222,8 +233,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const params = new URLSearchParams(window.location.search);
     const id = params.get("id") || 1; // Por defecto 1
-
+    console.log("ID de URL:", id);
     const producto = productos.find(p => p.id == id);
+    console.log("Producto encontrado:", producto);
+
+    if (!producto) {
+        document.body.innerHTML = "<h1>Producto no encontrado</h1>";
+        return;
+    }
 
     if (!producto) {
         document.body.innerHTML = "<h1>Producto no encontrado</h1>";
@@ -232,13 +249,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("nombreProducto").textContent = producto.nombre;
     document.getElementById("precioProducto").textContent = producto.precio;
+    document.getElementById("precioAnterior").textContent = producto.precioAnterior;
     document.getElementById("descripcion").textContent = producto.descripcion;
     document.getElementById("categoria").textContent = producto.categoria;
     document.getElementById("material").textContent = producto.material;
     document.getElementById("estilo").textContent = producto.estilo;
     document.getElementById("almacenamiento").textContent = producto.almacenamiento;
     document.getElementById("garantia").textContent = producto.garantia;
-    
+
     const contenedor = document.getElementById("imagenes");
 
     contenedor.innerHTML = "";
@@ -253,9 +271,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const imagenFooter = document.createElement("img");
         imagenFooter.src = producto.img_footer; // Aquí va la ruta de la imagen
         imagenFooter.className = "w-full h-full object-cover rounded-xl";
-    
+
         // Selecciona el footer y lo agrega dentro, o reemplaza el contenido existente
         const footer = document.getElementById("img_footer");
+        footer.innerHTML = "";
         footer.appendChild(imagenFooter);
     }
 
