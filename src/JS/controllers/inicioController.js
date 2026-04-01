@@ -139,7 +139,7 @@ const cardProductsFavoritos = [
             "../images/catalogo/card-venta3.jpg"
         ],
         title: "Banco Bambú Natural",
-        paragraph: "Mueble de madera con almacenamiento y diseño nórdico elegante."
+        paragraph: "Banco en bambú con tapizado y estante inferior, estilo nórdico."
     },
     {
         id: 2,
@@ -147,7 +147,7 @@ const cardProductsFavoritos = [
             "../images/catalogo/mueble-1.jpg"
         ],
         title: "Sofá moderno de 2 puestos azul",
-        paragraph: "Sofá de 2 puestos azul, cómodo y de estilo moderno."
+        paragraph: "Sofá azul de 2 puestos, cómodo, moderno y con cojines amplios."
     },
     {
         id: 3,
@@ -155,15 +155,15 @@ const cardProductsFavoritos = [
             "../images/catalogo/mesa-1.jpg"
         ],
         title: "Aparador de madera estilo nórdico",
-        paragraph: "Aparador minimalista de madera con cajón y puertas laterales."
+        paragraph: "Aparador de madera con cajón y puertas, diseño nórdico elegante."
     },
     {
         id: 4,
         productFavoriteImg: [
-            "../images/catalogo/card-venta3.jpg"
+            "../images/catalogo/comedor2-1.jpg"
         ],
-        title: "Banco Bambú Natural",
-        paragraph: "Mueble de madera con almacenamiento y diseño nórdico elegante."
+        title: "Mesa redonda con sillas de ratán",
+        paragraph: "Mesa redonda con 4 sillas de ratán, ideal para espacios modernos."
     },
     {
         id: 5,
@@ -171,7 +171,7 @@ const cardProductsFavoritos = [
             "../images/catalogo/mueble-1.jpg"
         ],
         title: "Sofá moderno de 2 puestos azul",
-        paragraph: "Sofá de 2 puestos azul, cómodo y de estilo moderno."
+        paragraph: "Sofá azul de 2 puestos, cómodo, moderno y con cojines amplios."
     },
     {
         id: 6,
@@ -179,9 +179,8 @@ const cardProductsFavoritos = [
             "../images/catalogo/mesa-1.jpg"
         ],
         title: "Aparador de madera estilo nórdico",
-        paragraph: "Aparador minimalista de madera con cajón y puertas laterales."
+        paragraph: "Aparador de madera con cajón y puertas, diseño nórdico elegante."
     }
-
 ];
 
 const promocionesData = [
@@ -191,47 +190,47 @@ const promocionesData = [
             "../images/catalogo/card-venta3.jpg"
         ],
         title: "Banco Bambú Natural",
-        paragraph: "Mueble de madera con almacenamiento y diseño nórdico elegante."
+        paragraph: "¡20% OFF! Solo por hoy · $1,200,000"
     },
     {
         id: 2,
         productPromoImg: [
             "../images/catalogo/mueble-1.jpg"
         ],
-        title: "Sofá moderno de 2 puestos azul",
-        paragraph: "Sofá de 2 puestos azul, cómodo y de estilo moderno."
+        title: "Sofá 2 Puestos Azul",
+        paragraph: "¡Ahorra $500.000! Oferta por tiempo limitado"
     },
     {
         id: 3,
         productPromoImg: [
             "../images/catalogo/mesa-1.jpg"
         ],
-        title: "Aparador de madera estilo nórdico",
-        paragraph: "Aparador minimalista de madera con cajón y puertas laterales."
+        title: "Aparador Nórdico",
+        paragraph: "¡Últimas unidades! 25% OFF · $1,800,000"
     },
     {
         id: 4,
         productPromoImg: [
-            "../images/catalogo/card-venta3.jpg"
+            "../images/catalogo/comedor2-1.jpg"
         ],
-        title: "Banco Bambú Natural",
-        paragraph: "Mueble de madera con almacenamiento y diseño nórdico elegante."
+        title: "Mesa Redonda con Sillas Ratán",
+        paragraph: "¡La más buscada! 20% OFF · $1,200,000"
     },
     {
         id: 5,
         productPromoImg: [
             "../images/catalogo/mueble-1.jpg"
         ],
-        title: "Sofá moderno de 2 puestos azul",
-        paragraph: "Sofá de 2 puestos azul, cómodo y de estilo moderno."
+        title: "Sofá 2 Puestos Azul",
+        paragraph: "¡No te lo pierdas! Ahorra $500.000 hoy"
     },
     {
         id: 6,
         productPromoImg: [
             "../images/catalogo/mesa-1.jpg"
         ],
-        title: "Aparador de madera estilo nórdico",
-        paragraph: "Aparador minimalista de madera con cajón y puertas laterales."
+        title: "Aparador Nórdico",
+        paragraph: "¡Precio especial! Solo quedan 3 unidades"
     }
 ];
 
@@ -268,7 +267,7 @@ window.addEventListener("DOMContentLoaded", () => {
     cardProductsFavoritos.forEach((product) => {
         const link = document.createElement("a");
         link.href = `infoCardProduct.html?id=${product.id}`;
-        link.className = "min-w-[280px] md:min-w-[350px] h-[400px] relative group overflow-hidden rounded-2xl snap-start flex-shrink-0 hover:scale-105 transition-transform duration-300";
+        link.className = "max-w-[280px] md:max-w-[350px] h-[400px] relative group overflow-hidden rounded-2xl snap-start flex-shrink-0 hover:scale-105 transition-transform duration-300";
 
         link.style.backgroundImage = `url(${product.productFavoriteImg[0]})`;
         link.style.backgroundSize = "cover";
@@ -277,12 +276,26 @@ window.addEventListener("DOMContentLoaded", () => {
 
         const overlay = document.createElement("div");
         overlay.classList.add(
-            "absolute", "inset-0", "bg-black/70", "opacity-70",
+            "absolute", "inset-0", "bg-black/80", "opacity-80",
             "md:opacity-0", "md:group-hover:opacity-100",
             "transition-opacity", "duration-300"
         );
 
+        textContainer = document.createElement("div");
+        textContainer.className = "relative z-10 flex flex-col w-full justify-end h-full text-center p-4 gap-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300";
+        const title = document.createElement("h2");
+        title.className = "text-title-alt font-cormorant font-bold tracking-wide text-xl md:text-4xl";
+        title.textContent = product.title;
+    
+        const paragraph = document.createElement("p");
+        paragraph.className = "text-form font-montserrat text-xs md:text-lg";
+        paragraph.textContent = product.paragraph;
+
+        textContainer.appendChild(title);
+        textContainer.appendChild(paragraph);
+
         link.appendChild(overlay);
+        link.appendChild(textContainer);
 
         productFavoritos.appendChild(link);
     });  
@@ -299,39 +312,36 @@ window.addEventListener("DOMContentLoaded", () => {
     promocionesData.forEach(promo => {
         const link = document.createElement("a");
         link.href = `descuentosProducts.html?id=${promo.id}`;
-        link.className = "min-w-[280px] md:min-w-[350px] h-[400px] relative group overflow-hidden rounded-2xl snap-start flex-shrink-0 hover:scale-105 transition-transform duration-300";
-    
-        // Fondo dinámico
+        link.className = "max-w-[280px] md:max-w-[350px] h-[400px] relative group overflow-hidden rounded-2xl snap-start flex-shrink-0 hover:scale-105 transition-transform duration-300";
+
         link.style.backgroundImage = `url(${promo.productPromoImg[0]})`;
         link.style.backgroundSize = "cover";
         link.style.backgroundPosition = "center";
         link.style.backgroundRepeat = "no-repeat";
-    
-        // Overlay con efecto hover
+
         const overlay = document.createElement("div");
         overlay.classList.add(
-            "absolute", "inset-0", "bg-black/70", "opacity-70",
+            "absolute", "inset-0", "bg-black/80", "opacity-80",
             "md:opacity-0", "md:group-hover:opacity-100",
             "transition-opacity", "duration-300"
         );
+
+        const textContainer = document.createElement("div");
+        textContainer.className = "relative z-10 flex flex-col w-full justify-end h-full text-center p-4 gap-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300";
     
-        // Contenedor de texto
-        // const textContainer = document.createElement("div");
-        // textContainer.className = "relative z-10 flex flex-col justify-end h-full text-center p-4 gap-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300";
+        const title = document.createElement("h2");
+        title.className = "text-title-alt font-cormorant font-bold tracking-wide text-xl md:text-4xl";
+        title.textContent = promo.title;
     
-        // const title = document.createElement("h2");
-        // title.className = "w-1/2 text-title-alt font-cormorant font-bold tracking-wide text-xl md:text-4xl";
-        // title.textContent = promo.title;
+        const paragraph = document.createElement("p");
+        paragraph.className = "text-form font-montserrat text-xs md:text-lg";
+        paragraph.textContent = promo.paragraph;
     
-        // const paragraph = document.createElement("p");
-        // paragraph.className = "w-5/3 text-form font-montserrat text-xs md:text-lg";
-        // paragraph.textContent = promo.paragraph;
-    
-        // textContainer.appendChild(title);
-        // textContainer.appendChild(paragraph);
+        textContainer.appendChild(title);
+        textContainer.appendChild(paragraph);
     
         link.appendChild(overlay);
-        // link.appendChild(textContainer);
+        link.appendChild(textContainer);
         promocionesContainer.appendChild(link);
     });
 });

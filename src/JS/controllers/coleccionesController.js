@@ -131,9 +131,9 @@ const cardProducts = [
     {
         id: 4,
         cardImagenes: [
-            "../images/catalogo/card-venta3.jpg"
+            "../images/catalogo/comedor2-1.jpg"
         ],
-        title: "Banco Bambú Natural",
+        title: "Mesa redonda con sillas de ratán",
         paragraph: "Mueble de madera con almacenamiento y diseño nórdico elegante."
     },
     {

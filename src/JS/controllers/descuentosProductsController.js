@@ -169,21 +169,21 @@ const productos = [
     },
     {
         id: 4,
-        nombre: "Banco Bambú Natural",
+        nombre: "Mesa redonda con sillas de ratán",
         precio: "Ahora: $1,200,000",
         precioAnterior: "Antes: $1,500,000",
         imagenes: [
-            "../images/catalogo/card-venta1.jpg",
-            "../images/catalogo/card-venta2.jpg",
-            "../images/catalogo/card-venta3.jpg",
-            "../images/catalogo/card-venta4.jpg"
+            "../images/catalogo/comedor2-1.jpg",
+            "../images/catalogo/comedor2-2.jpg",
+            "../images/catalogo/comedor2-3.jpg",
+            "../images/catalogo/comedor2-4.jpg"
         ],
         img_footer: "../images/bnFooter_infoCatalogo/banner-venta.jpg",
-        descripcion: "Fabricado en bambú natural...",
-        categoria: "Banco con almacenamiento",
-        material: "Bambú natural + tapizado",
-        estilo: "Nórdico / Orgánico",
-        almacenamiento: "Estante inferior",
+        descripcion: "Elegante mesa redonda de madera clara con base tipo pedestal, ideal para comedor o cocina. Incluye 4 sillas de ratán tejidas con cojines acolchados en tono azul claro, brindando comodidad y estilo moderno.",
+        categoria: "Comedor & reuniones",
+        material: "Madera maciza y ratán natural",
+        estilo: "Costero / Escandinavo",
+        almacenamiento: "No incluye almacenamiento adicional",
         garantia: "12 meses"
     },
     {
